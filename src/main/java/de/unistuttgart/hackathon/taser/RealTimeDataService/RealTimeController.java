@@ -17,7 +17,7 @@ public class RealTimeController {
     /**
      * Define new pool based on location in applications.properties
      */
-    JedisPooled pool = new JedisPooled(redisLocation, 6379);
+    JedisPooled pool = new JedisPooled("localhost", 6379);
 
     // get Logger for this class
     private static final Logger LOGGER = LoggerFactory.getLogger(RealTimeController.class);
